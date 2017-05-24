@@ -19,3 +19,5 @@ scheme_name  			| 	项目名称(一般与 project_name 相同)      |
 1. 在 `包生成路径` 找到以 `project_name` 命名的 ipa 文件; 
 2. 根据 `uKey` 和 `\_api\_key` 上传至蒲公英
 
+#### 注意:
+打包之前 Xcode 需配置好证书
