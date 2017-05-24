@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appID</key>
+	<array>
+		<string>273f032c0777182b6297ad8e05d39d31</string>
+	</array>
+	<key>apiKey</key>
+	<array>
+		<string>8977e1ba4b2cc950f94ad175086cb75d</string>
+	</array>
+	<key>ukey</key>
+	<array>
+		<string>8c61cb937fa1ce502d7292b225aa31ba</string>
+	</array>
+	<key>project_name</key>
+	<array/>
+	<key>scheme_name</key>
+	<array/>
+	<key>archivePath</key>
+	<array/>
+	<key>ipaPath</key>
+	<array/>
+	<key>projectPath</key>
+	<array/>
+</dict>
+</plist>
