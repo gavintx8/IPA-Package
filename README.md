@@ -1,18 +1,21 @@
-# XFLoopView
-###一个轮播图的 demo
-####实现原理:
-在一个 scrollview 上，用3张 imageView 实现轮播,左边 imageView、中间 imageView、右边 imageView。动画效果完成中间的 imageView 滑动到左边，右边的 imageView 滑动到中间。
+# 打包上传工具
+### mac 工具
+####软件界面:
+![Markdown preferences pane](https://github.com/xrefLee/IPA-Package/blob/master/111.png?raw=true)
+####使用介绍:
+参数名称   	          |介绍    				| 
+--------------------|-------------------|
+project_name        | 	.xcodeproj/.xcworkspace 的前缀  | 
+项目文件夹路径  		| 	.xcodeproj/.xcworkspace 所在的文件夹   | 
+scheme_name  			| 	项目名称(一般与 project_name 相同)      | 
+包生成路径      		|  	ipa 包生成后存储的文件夹  | 
+ uKey           		|  	上传蒲公英是需要的参数(在蒲公英账户中获取)   |
+\_api\_key         	| 	上传蒲公英是需要的参数(在蒲公英账户中获取)     |
 
-在这一时刻同时做两件事情：
+####打包逻辑:
+在 `项目文件路径` 中找到以 `project_name` 为前缀的.xcodeproj/.xcworkspace 构建 以 `project_name` 命名的ipa 文件至 `包生成路径`
 
-1.把右边的imageView 里的image赋值给中间的 imageView，而右边的 imageView 传入下一张 image。
-2.把中间的 imageView 放回屏幕中间，把右边的 imageView 放回屏幕右边右边，（改变 scrollview 的偏移量）
+####上传逻辑:
+1. 在 `包生成路径` 找到以 `project_name` 命名的 ipa 文件; 
+2. 根据 `uKey` 和 `\_api\_key` 上传至蒲公英
 
-####关于缓存：
-传入图片的方式有两种：
-
-imageArr：
-传入 image 或者 url，传入 url 是调用的 sdwebimage 实现的缓存。
-
-imageUrlArr：
-传入 url 自定义的缓存路径，存储到沙盒的 plist 里。
