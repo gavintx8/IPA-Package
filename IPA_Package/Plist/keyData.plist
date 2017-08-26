@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   keyData.plist
-   IPA_Package
-
-   Created by lxf on 2017/5/22.
-   Copyright (c) 2017年 lxf. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>BKHousePet</key>
+	<dict>
+		<key>apiKey</key>
+		<string>8977e1ba4b2cc950f94ad175086cb75d</string>
+		<key>ipaPath</key>
+		<string>/Users/lxf/Desktop/IPA--Folder</string>
+		<key>projectPath</key>
+		<string>/Users/lxf/Desktop/BKHousePet</string>
+		<key>project_name</key>
+		<string>BKHousePet</string>
+		<key>scheme_name</key>
+		<string>BKHousePet</string>
+		<key>uKey</key>
+		<string>8c61cb937fa1ce502d7292b225aa31ba</string>
+	</dict>
+	<key>帝友系统V5</key>
+	<dict>
+		<key>apiKey</key>
+		<string>8977e1ba4b2cc950f94ad175086cb75d</string>
+		<key>ipaPath</key>
+		<string>/Users/lxf/Desktop/IPA--Folder</string>
+		<key>projectPath</key>
+		<string>/Users/lxf/Desktop/帮客网1.0版本</string>
+		<key>project_name</key>
+		<string>帝友系统V5</string>
+		<key>scheme_name</key>
+		<string>帝友系统V5</string>
+		<key>uKey</key>
+		<string>8c61cb937fa1ce502d7292b225aa31ba</string>
+	</dict>
+</dict>
 </plist>

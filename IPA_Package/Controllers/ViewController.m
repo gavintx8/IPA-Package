@@ -374,13 +374,23 @@
 
     NSDictionary *dic =[keyPlistDic GetDictionaryForKey:sender.stringValue];
     
-    self.projectPathBox.stringValue = [dic GetStringForKey:@"projectPath"];
-//    self.projectNameTextBox.stringValue =[dic GetStringForKey:@"project_name"];
-    self.schemeNameTextBox.stringValue =[dic GetStringForKey:@"scheme_name"];
-    self.ipaPathText.stringValue =[dic GetStringForKey:@"ipaPath"];
-    self.uKeyBox.stringValue =[dic GetStringForKey:@"uKey"];
-    self.apiKeyBox.stringValue =[dic GetStringForKey:@"apiKey"];
-    self.appID.stringValue =[dic GetStringForKey:@"appID"];
+    if (dic.allKeys.count == 0) {
+        return;
+    }
+    
+    self.projectPathBox.stringValue = [self.projectPathBox.stringValue isEqualToString:@""] ? [dic GetStringForKey:@"projectPath"] :self.projectPathBox.stringValue;
+
+    
+    
+    self.schemeNameTextBox.stringValue = [self.schemeNameTextBox.stringValue isEqualToString:@""] ? [dic GetStringForKey:@"scheme_name"] :self.schemeNameTextBox.stringValue;
+    
+    
+    self.ipaPathText.stringValue = [self.ipaPathText.stringValue isEqualToString:@""] ? [dic GetStringForKey:@"ipaPath"] :self.ipaPathText.stringValue;
+    
+    self.uKeyBox.stringValue = [self.uKeyBox.stringValue isEqualToString:@""] ? [dic GetStringForKey:@"uKey"] :self.uKeyBox.stringValue;
+    self.apiKeyBox.stringValue = [self.apiKeyBox.stringValue isEqualToString:@""] ? [dic GetStringForKey:@"apiKey"] :self.apiKeyBox.stringValue;
+    self.appID.stringValue = [self.appID.stringValue isEqualToString:@""] ? [dic GetStringForKey:@"appID"] :self.appID.stringValue;
+
     
     
 }
